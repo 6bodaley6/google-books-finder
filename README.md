@@ -18,7 +18,7 @@ This a Google Books Finder using Apollo, REACT, Graphql, MongoDB, Jwt
 
 ## Installation
 
-git clone THEN go to root THEN <npm i> THEN <cd client> <npm i> THEN <cd ..> THEN <cd server npm i> THEN <npm start> go to your choice of web browser go to <https://localhost:3001>
+git clone THEN go to root THEN npm i THEN cd client THEN npm i THEN cd .. THEN cd server npm i THEN npm start THEN go to your choice of web browser go to https://localhost:3001
 
 ## License
 
