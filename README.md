@@ -1,23 +1,10 @@
 # Google Books Finder
 
-<!-- {
-"name": "google-books-finder",
-"version": "1.0.0",
-"description": "",
-"main": "server.js",
-"scripts": {
-"start": "node server.js",
-"watch": "nodemon server.js"
-},
-"keywords": [],
-"author": ""
-} -->
-
 ![GitHub license](https://img.shields.io/badge/license--blue.svg)
 
 ## Description
 
-This is a Google Books Finder using Apollo, REACT, Graphql, MongDB, Jwt
+This a Google Books Finder using Apollo, REACT, Graphql, MongoDB, Jwt
 
 ## Table Of Contents
 
@@ -31,7 +18,7 @@ This is a Google Books Finder using Apollo, REACT, Graphql, MongDB, Jwt
 
 ## Installation
 
-git clone, go to root, npm i, npm start, http://localhost:3000/
+git clone , go to root, <npm i>, <cd client> <npm i>, <cd ..>, <cd server npm i>, <npm start> go to your choice of web browser go to <https://localhost:3001>
 
 ## License
 
@@ -39,13 +26,15 @@ This is Licensed under the license
 
 ## Usage
 
-Search for a book and save a list of books to read.
+This is a MERN application using GraphQL and Apollo Server to interact with the backend. This web app uses the Google Books API. This app allows user to find books and then save them after they sign up.
 
 ## Credits
 
 ## Contributing
 
 ## Tests
+
+To test you need to follow the installation proccess and then go to <https://localhost3001/graphql> in the GraphQL playground
 
 ## Questions
 
