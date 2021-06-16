@@ -34,7 +34,7 @@ This is a MERN application using GraphQL and Apollo Server to interact with the 
 
 ## Tests
 
-To test you need to follow the installation proccess and then go to <https://localhost3001/graphql> in the GraphQL playground
+To test you need to follow the installation proccess and then go to https://localhost3001/graphql in the GraphQL playground
 
 ## Questions
 
