@@ -38,9 +38,9 @@ userSchema.pre('save', async function (next) {
 });
 //custom validation for password to log in 
 userSchema.methods.isCorrectPassword = async function (password) {
-    return bcrypt.compare(password, this.pasword);
+    return bcrypt.compare(password, this.password);
 };
-//query user and get booCout with the number of saved books that user has
+//query user and get booCount with the number of saved books that user has
 userSchema.virtual('bookCount').get(function () {
     return this.savedBooks.length;
 });
