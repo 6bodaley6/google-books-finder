@@ -9,7 +9,9 @@ const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-
+//!! added code below recomended from website if dosnt work delete trying to fix heroku
+// const uri = process.env.MONGODB_URI;
+//!!
 const server = new ApolloServer({
     typeDefs,
     resolvers,
