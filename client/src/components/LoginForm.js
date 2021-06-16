@@ -33,6 +33,7 @@ const LoginForm = () => {
                 variables: { ...userFormData }
             });
 
+
             //store token in local storage
             Auth.login(data.login.token);
             console.log(data);

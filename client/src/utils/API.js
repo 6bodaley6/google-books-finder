@@ -26,6 +26,7 @@ export const loginUser = (userData) => {
 };
 
 export const saveBook = (bookData, token) => {
+    console.log(bookData)
     return fetch('/api/users', {
         method: 'PUT',
         headers: {

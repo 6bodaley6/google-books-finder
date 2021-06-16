@@ -11,6 +11,7 @@ const SearchBooks = () => {
     const [searchedBooks, setSearchBooks] = useState([]);
     const [searchInput, setSearchInput] = useState('');
     const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
+    const [saveBook, { error }] = useMutation(SAVE_BOOK);
     useEffect(() => {
         return () => saveBookIds(savedBookIds);
     });
@@ -25,7 +26,7 @@ const SearchBooks = () => {
             const response = await searchGoogleBooks(searchInput);
 
             if (!response.ok) {
-                throw new Error('somthing went wrong');
+                throw new Error('something went wrong');
             }
 
             const { items } = await response.json();
@@ -44,7 +45,7 @@ const SearchBooks = () => {
             console.error(err);
         }
     };
-    const [saveBook, { error }] = useMutation(SAVE_BOOK);
+    // // const [saveBook, { error }] = useMutation(SAVE_BOOK);
 
     const handleSaveBook = async (bookId) => {
         const bookToSave = searchedBooks.find((book) => book.bookId === bookId);
@@ -53,6 +54,7 @@ const SearchBooks = () => {
             return false;
         }
         try {
+            console.log(bookToSave)
             const { data } = await saveBook({
                 variables: { bookInput: bookToSave }
             });
