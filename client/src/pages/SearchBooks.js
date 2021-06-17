@@ -33,7 +33,8 @@ const SearchBooks = () => {
 
             const bookData = items.map((book) => ({
                 bookId: book.id,
-                authors: book.volumeInfo.title,
+                authors: book.volumeInfo.authors || ["No author Credited for book"],
+                title: book.volumeInfo.title,
                 description: book.volumeInfo.description,
                 image: book.volumeInfo.imageLinks?.thumbnail || '',
                 link: book.volumeInfo.infoLink

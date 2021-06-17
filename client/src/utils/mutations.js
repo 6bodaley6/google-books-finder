@@ -35,9 +35,9 @@ mutation saveBook($bookInput: BookInput!){
         savedBooks {
             bookId
             authors
-            image
             description
             title
+            image
             link
         }
     }
@@ -54,10 +54,10 @@ mutation removeBook($bookId: ID!) {
         savedBooks {
             bookId
             authors
+            description
+            title
             image
             link
-            title
-            description
         }
     }
 }
