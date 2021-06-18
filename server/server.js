@@ -2,16 +2,16 @@ const path = require('path');
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 
+const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth')
 
-const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-//!! added code below recomended from website if dosnt work delete trying to fix heroku
-// const uri = process.env.MONGODB_URI;
-//!!
+// // //!! added code below recomended from website if dosnt work delete trying to fix heroku
+// // // const uri = process.env.MONGODB_URI;
+// // //!!
 const server = new ApolloServer({
     typeDefs,
     resolvers,
@@ -22,7 +22,7 @@ server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
+//serve up static assets
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));
 }
