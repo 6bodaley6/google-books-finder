@@ -9,9 +9,7 @@ const LoginForm = () => {
     const [userFormData, setUserFormData] = useState({ email: '', password: '' });
     const [validated] = useState(false);
     const [showAlert, setShowAlert] = useState(false);
-
-    //apollo hook useMutation to talk to graph ql
-    //error will be held in the addUser output
+    //trying to get heroku to work
     const [login, { error }] = useMutation(LOGIN_USER);
 
     const handleInputChange = (event) => {
