@@ -16,6 +16,9 @@ This a Google Books Finder using Apollo, REACT, Graphql, MongoDB, Jwt
 - [Questions](#Questions)
 - [License](#license)
 
+## Deployed at
+https://bo-gbf.herokuapp.com/
+
 ## Installation
 
 git clone THEN go to root of repository THEN npm i THEN cd client THEN npm i THEN cd .. THEN cd server npm i THEN npm start THEN go to your choice of web browser go to https://localhost:3001
