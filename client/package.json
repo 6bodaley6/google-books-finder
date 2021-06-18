@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "proxy": "http://localhost:3001",
-  "description": "",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "@testing-library/jest-dom": "^5.14.1",
