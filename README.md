@@ -1,10 +1,7 @@
 # Google Books Finder
+This a Google Books Finder using Apollo, REACT, Graphql, MongoDB, Jwt
 
 ![GitHub license](https://img.shields.io/badge/license--blue.svg)
-
-## Description
-
-This a Google Books Finder using Apollo, REACT, Graphql, MongoDB, Jwt
 
 ## Table Of Contents
 
